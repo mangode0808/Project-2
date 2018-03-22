@@ -1,0 +1,191 @@
+<div class="jumbotron">
+    <hr>
+    <hr>
+    <h2>High Scores</h2>
+    {{#each scores}} {{this.name}}-{{this.score}}
+    <br>
+    <hr>
+    <hr>{{/each}}
+    <h1>Friends</h1>
+    <div id="plot">Plot</div>
+    <p>Ross Geller, Rachel Green, Monica Geller, Joey Tribbiani, Chandler Bing, and Phoebe Buffay are six 20 something year
+        olds living in New York City. Over the course of 10 years, these friends go through family, love, drama, friendship,
+        and comedy.</p>
+
+
+
+    <form method="POST" action="/submit">
+        <input class="form-control" id="text-type" type="text" name="name" placeholder="your name">
+
+
+        <br>
+        <hr>
+        <br>
+        <h2>Season 1</h2>
+        <p>How many babies are born on the show?</p>
+
+        <input type="radio" name="question_one" value="Three">Three
+        <br>
+
+        <input type="radio" name="question_one" value="Six">Six
+        <br>
+
+        <input type="radio" name="question_one" value="Ten">Ten
+        <br>
+
+        <input type="radio" name="question_one" value="Seven">Seven
+        <br>
+
+        <hr>
+
+        <h2>Season 2</h2>
+        <p>How many season of Friends show were made?</p>
+
+        <input type="radio" name="question_two" value="Ten seasons">Ten seasons
+        <br>
+
+        <input type="radio" name="question_two" value="Five seasons">Five seasons
+        <br>
+
+        <input type="radio" name="question_two" value="Twelve seasons">Twelve seasons
+        <br>
+
+        <input type="radio" name="question_two" value="Three seasons">Three seasons
+        <br>
+
+        <hr>
+
+        <h2>Season 3</h2>
+        <p>What was the nationality of Ross' second wife, Emily?</p>
+
+        <input type="radio" name="question_three" value="Spanish">Spanish
+        <br>
+
+        <input type="radio" name="question_three" value="French">French
+        <br>
+
+        <input type="radio" name="question_three" value="American">American
+        <br>
+
+        <input type="radio" name="question_three" value="English">English
+        <br>
+
+        <hr>
+        <h2>Season 4</h2>
+        <p>Who teaches Rachel and Phoebe about 'Unagi'?</p>
+
+        <input type="radio" name="question_four" value="Ross">Ross
+        <br>
+
+        <input type="radio" name="question_four" value="Sushi Chef">Sushi chef
+        <br>
+
+        <input type="radio" name="question_four" value="Karate Instructor">Karate instructor
+        <br>
+
+        <input type="radio" name="question_four" value="Joey">Joey
+        <br>
+
+        <hr>
+        <h2>Season 5</h2>
+        <p>What does Joey wear to Monica and Chandler's wedding?</p>
+
+        <input type="radio" name="question_five" value="Suits">Suits
+        <br>
+
+        <input type="radio" name="question_five" value="Gym Clothes">Gym clothes
+        <br>
+
+        <input type="radio" name="question_five" value="An army uniform">An army uniform
+        <br>
+
+        <input type="radio" name="question_five" value="Swim shorts">Swim shorts
+        <br>
+
+        <hr>
+        <h2>Season 6</h2>
+        <p>How many Friends have worked in the coffee shop?</p>
+
+        <input type="radio" name="question_six" value="4 (Gunther, Rachel, Phoebe, and Joey)">4 (Gunther, Rachel, Phoebe, and Joey)
+        <br>
+
+        <input type="radio" name="question_six" value="3 (Rachel, Phoebe, and Joey)">3 (Rachel, Phoebe, and Joey)
+        <br>
+
+        <input type="radio" name="question_six" value="1 (only Gunther)">1 (only Gunther)
+        <br>
+
+        <input type="radio" name="question_six" value="2 (Joey and Rachel)">2 (Joey and Rachel)
+        <br>
+
+        <hr>
+        <h2>Season 7</h2>
+        <p>What are Ross and Monica's parent's names?</p>
+
+        <input type="radio" name="question_seven" value="Jack and Judy Geller">Jack and Judy Geller
+        <br>
+
+        <input type="radio" name="question_seven" value="John and July Green">John and July Green
+        <br>
+
+        <input type="radio" name="question_seven" value="Steve and Stella Geller">Steve and Stella Geller
+        <br>
+
+        <input type="radio" name="question_seven" value="Jake and Jodi Green">Jake and Jodi Green
+        <br>
+
+        <hr>
+        <h2>Season 8</h2>
+        <p>How many women give birth before Rachel3 the same day)?</p>
+
+        <input type="radio" name="question_eight" value="8">8
+        <br>
+
+        <input type="radio" name="question_eight" value="3">3
+        <br>
+
+        <input type="radio" name="question_eight" value="5">5
+        <br>
+
+        <input type="radio" name="question_eight" value="1">1
+        <br>
+
+        <hr>
+        <h2>Season 9</h2>
+        <p>What is Chandler's middle name? </p>
+
+        <input type="radio" name="question_nine" value="Green">Green
+        <br>
+
+        <input type="radio" name="question_nine" value="Geller">Geller
+        <br>
+
+        <input type="radio" name="question_nine" value="Muriel">Muriel
+        <br>
+
+        <input type="radio" name="question_nine" value="Buffay">Buffay
+        <br>
+
+        <hr>
+        <h2>Season 10</h2>
+        <p>What instrument does Phoebe play?</p>
+
+        <input type="radio" name="question_ten" value="Drum">Drum
+        <br>
+        <input type="radio" name="question_ten" value="Guitar">Guitar
+        <br>
+
+        <input type="radio" name="question_ten" value="Piano">Piano
+        <br>
+
+        <input type="radio" name="question_ten" value="Flutes">Flutes
+        <br>
+
+        <hr>
+
+        <input type="submit" value="submit"></input>
+    </form>
+
+    <hr>
+
+</div>
