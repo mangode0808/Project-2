@@ -16,18 +16,28 @@ console.log('--------------the environment we are using----------------');
 console.log(app.settings.env);
 console.log('--------------the environment we are using----------------');
 
-if (app.settings.env == 'development') {
-    var connection = mysql.createConnection({
-        port: 3306,
-        host: "localhost",
-        user: "root",
-        password: "",
-        database: "quiz_db"
-    });
-} else {
+// if (app.settings.env == 'development') {
+//     var connection = mysql.createConnection({
+//         port: 3306,
+//         host: "localhost",
+//         user: "root",
+//         password: "",
+//         database: "quiz_db"
+//     });
+// } else {
+//     var connection = mysql.createConnection(process.env.JAWSDB_URL);
+// }
+if (process.env.JAWSDB_URL){
     var connection = mysql.createConnection(process.env.JAWSDB_URL);
-}
-
+  }else {
+    var connection = mysql.createConnection({
+      port: 3306,
+      host: "localhost",
+      user: "root",
+      password: "",
+      database: "groupon_db"
+    });
+  }
 // Make connection.
 connection.connect(function (err) {
     if (err) {
@@ -76,7 +86,12 @@ app.post('/submit', function (req, res) {
 });
 
 
-var port = 4000;
-app.listen(port, function () {
-    console.log('listening on port ' + port);
-});
+// var port = 4000;
+// app.listen(port, function () {
+//     console.log('listening on port ' + port);
+// });
+var port = 3000;
+
+if (process.env.PORT){
+    port = process.env.PORT;
+}
