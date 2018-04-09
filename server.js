@@ -35,7 +35,7 @@ if (process.env.JAWSDB_URL){
       host: "localhost",
       user: "root",
       password: "",
-      database: "groupon_db"
+      database: "quiz_db"
     });
   }
 // Make connection.
@@ -86,12 +86,7 @@ app.post('/submit', function (req, res) {
 });
 
 
-// var port = 4000;
-// app.listen(port, function () {
-//     console.log('listening on port ' + port);
-// });
-var port = 3000;
-
-if (process.env.PORT){
-    port = process.env.PORT;
-}
+var port = process.env.PORT || 3000;
+app.listen(port, function () {
+    console.log('listening on port ' + port);
+});
